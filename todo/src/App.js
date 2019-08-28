@@ -14,7 +14,7 @@ class App extends React.Component {
     todos: []
   }
   componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10').then(res => {
+    axios.get('https://jsonplaceholder.typicode.com/todos?_limit=100').then(res => {
       this.setState({ todos: res.data })
     })
   }
